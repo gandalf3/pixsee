@@ -1,0 +1,6 @@
+data/com.blendermonkey.Pixsee.desktop.in.in
+data/com.blendermonkey.Pixsee.gschema.xml.in
+data/com.blendermonkey.Pixsee.metainfo.xml.in.in
+data/resources/ui/shortcuts.ui
+data/resources/ui/window.ui
+src/application.rs

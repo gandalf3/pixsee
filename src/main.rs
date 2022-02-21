@@ -1,4 +1,5 @@
 mod application;
+
 #[rustfmt::skip]
 mod config;
 mod window;
@@ -10,10 +11,10 @@ use self::application::PixseeApplication;
 use self::config::{GETTEXT_PACKAGE, LOCALEDIR, RESOURCES_FILE};
 
 fn main() {
-    // Initialize logger
+    // initialize logger
     pretty_env_logger::init();
 
-    // Prepare i18n
+    // prepare i18n
     gettextrs::setlocale(LocaleCategory::LcAll, "");
     gettextrs::bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR).expect("Unable to bind the text domain");
     gettextrs::textdomain(GETTEXT_PACKAGE).expect("Unable to switch to the text domain");

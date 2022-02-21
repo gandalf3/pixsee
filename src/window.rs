@@ -37,7 +37,7 @@ mod imp {
             Self::bind_template(klass);
         }
 
-        // You must call `Widget`'s `init_template()` within `instance_init()`.
+        // you must call `Widget`'s `init_template()` within `instance_init()`.
         fn instance_init(obj: &glib::subclass::InitializingObject<Self>) {
             obj.init_template();
         }
@@ -47,25 +47,25 @@ mod imp {
         fn constructed(&self, obj: &Self::Type) {
             self.parent_constructed(obj);
 
-            // Devel Profile
+            // devel profile
             if PROFILE == "Devel" {
                 obj.add_css_class("devel");
             }
 
-            // Load latest window state
+            // load latest window state
             obj.load_window_size();
         }
     }
 
     impl WidgetImpl for PixseeApplicationWindow {}
     impl WindowImpl for PixseeApplicationWindow {
-        // Save window state on delete event
+        // save window state on delete event
         fn close_request(&self, window: &Self::Type) -> gtk::Inhibit {
             if let Err(err) = window.save_window_size() {
                 log::warn!("Failed to save window state, {}", &err);
             }
 
-            // Pass close request on to the parent
+            // pass close request on to the parent
             self.parent_close_request(window)
         }
     }

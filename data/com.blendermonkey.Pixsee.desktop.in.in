@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Pixsee
-Comment=Write a GTK + Rust application
+Comment=Image viewer program
 Type=Application
 Exec=pixsee
 Terminal=false

@@ -1,4 +1,3 @@
-
 # Features
 
 ## Basics
@@ -10,30 +9,25 @@
 * Rotate (90° offsets)
 * Flip
 
-## Comparison tools
+### Comparison tools
 
 Ideas for back to back image comparison
 
 * Preserve zoom level/pan offset, so same size images can be swapped between without shifting
 * Somehow allow re-ordering of images to allow quick toggling through several images to compare them all
 
-# Inspection tools
+### Inspection tools
 
-Nice histogram
+* Nice histogram
+* EXIF data
 
-## HDR Support
+### Miscellaneous
 
-* Load .hdr and .exr images
-* Dynamic range scaling controls, log transform
-* Panoramic mapping/viewing?
+* Open images from HTTP
+* Themeable (think zathura, rofi, etc.)
+* Full keyboard support (think feh, zathura)
 
-
-## Image sequence support?
-
-Maybe, djv_view already does a good job of this for most things, though HDR image sequence viewing would be welcome.
-
-
-## All the Formats
+## All the formats
 
 * everything supported by freeimage
 * heic
@@ -41,3 +35,13 @@ Maybe, djv_view already does a good job of this for most things, though HDR imag
 * apng
 * we'll have to see about video formats, seems kind of out of scope but if we're doing animated formats anyway..
 * ¡ M I D I !
+
+### HDR Support
+
+* Load .hdr and .exr images
+* Dynamic range scaling controls, log transform
+* Panoramic mapping/viewing?
+
+### Image sequence support?
+
+Maybe, djv_view already does a good job of this for most things, though HDR image sequence viewing would be welcome.
